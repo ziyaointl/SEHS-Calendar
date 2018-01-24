@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "64537c89caee178fa3b2b9c54108e3ea733471d155403aa228d5d46a210d342d"
+            "sha256": "feffc929c0df96701d6eadedf0d56dc2a47344e163d701fff53bea561c8b243b"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -35,6 +35,16 @@
                 "sha256:d96b804be412a5125a594023ec524a2010a6ffa4d408e5482ab6ff3cb97ec12f"
             ],
             "version": "==2.0.1"
+        },
+        "mysqlclient": {
+            "hashes": [
+                "sha256:b3b1a7e4468180afb79289b54069d9499242946a4cedf3928cbf6b2a13800016",
+                "sha256:d56e379c03efad746e84705cbb97401f60d1f98b05e11a27f2d9c2d043936974",
+                "sha256:371df79d000af56b4e540b7ce2120d1c9afb04b751bfce25a1eb609c50fd10ff",
+                "sha256:1e85e48b167e2af3bb08f273fdbd1ad6401cbe75057fa6513f97387dc7b282dc",
+                "sha256:2d9ec33de39f4d9c64ad7322ede0521d85829ce36a76f9dd3d6ab76a9c8648e5"
+            ],
+            "version": "==1.3.12"
         },
         "pytz": {
             "hashes": [
