@@ -1,0 +1,31 @@
+{% if next_two_events.exists %}
+
+{% load static %}
+
+<link rel="stylesheet" id="html5blank-css" href="https://intl.sehs.science/wp-content/themes/WP-SEHS/style.css?ver=1.0" media="all">
+<link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+
+<div class="container-fluid" id="events">
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <h1 id="events-title">Upcoming Events</h1>
+      <a href="https://intl.sehs.science/club/" class="btn-default btn" id="more-events">More Events</a>
+      <div class="row">
+        {% for event in next_two_events %}
+        <div class="col-lg-6 section-col">
+          <div class="event-date">
+            <h3 class="event-month">{{ event.event_date.month }}</h3>
+            <h3 class="event-day">{{ event.event_date.day }}</h3>
+          </div>
+          <div class="event-description">
+            <h2 class="event-title">{{ event.title }}</h2>
+            <h3 class="event-time">{{ event.event_date.hour }}:00</h3>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endif %}
