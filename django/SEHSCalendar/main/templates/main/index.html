@@ -14,12 +14,12 @@
         {% for event in next_two_events %}
         <div class="col-lg-6 section-col">
           <div class="event-date">
-            <h3 class="event-month">{{ event.event_date.month }}</h3>
-            <h3 class="event-day">{{ event.event_date.day }}</h3>
+            <h3 class="event-month">{{ event.get_month }}</h3>
+            <h3 class="event-day">{{ event.date.day }}</h3>
           </div>
           <div class="event-description">
-            <h2 class="event-title">{{ event.title }}</h2>
-            <h3 class="event-time">{{ event.event_date.hour }}:00</h3>
+            <h2 class="event-title">{{ event.get_title }}</h2>
+            <h3 class="event-time">{{ event.get_start_time }} – {{ event.get_finish_time }}</h3>
           </div>
         </div>
         {% endfor %}
